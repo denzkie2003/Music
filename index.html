@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	
+ <head>
+ 	
+   <title>SoundPlay - Play and Download Music For Free</title>
+  
+   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+   
+   <!--Link CSS-->
+   <link rel="stylesheet" href="style.css"/>
+   <!--Link Fontawesome cdn-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ </head>
+ <body>
+    <div class="top-con">
+    	<h2 class="logo-name"><span style="color:red;">S</span>ound<span style="color:red;">P</span>lay</h2>
+    </div>
+    
+    <div class="main-con">
+    	<div class="intro-message">
+    	   <span>Welcome to <span style="color:red;">S</span>ound<span style="color:red;">P</span>lay. A free webpage to start listening and downloading hundreds of musics for free.</span>
+          <br/><br/>
+          <span id="songs" style="padding:0;font-size:10px;margin: 3px; color: #fff"></span><br/>
+          <input type="search" name="findmusic" id="findmusic" placeholder="Search Music" onkeyup="searchMusic()"/>
+          
+        </div>
+        
+        <div class="music-con">
+        	
+           <div class="display-sound">Music List: <br/><span style="font-size:10px;">It takes awhile to load the music depends on your connection...</span></div>
+             <div class="loader" id="loader"></div>
+           <div class="mes">Loading Data <br/>Please Wait...</div>
+           <div class="music-display">
+           	<ul id="music-list"></ul>
+           </div>
+        </div>
+
+        <div class="playlist-con">
+        	<div class="playlist-name">PlayList:</div>
+            <div class="playlist">
+            	<ul id="playlist"> </ul>
+            </div>
+        </div>
+ 
+ 
+      <div class="info">
+        <p>©Copyright</p>
+        <p>®Alright Reserve 2021</p>
+        <p>Publish: </p>
+        <p>Developer: DenZ</p>
+        <p>Follow Official Fb Page:<a href="https://www.facebook.com/DenZMusicBeat/"> https://www.facebook.com/DenZMusicBeat/</a></p>
+        <p>If you have any issue, please kindly <a href="mailto: superdenz2003@gmail.com">email</a> me.</p>
+      </div>
+ 
+ 
+ 
+    </div>
+
+  <script src="script.js"> </script>
+  <script src="playlist.js"> </script>
+    <script src="morescript.js"> </script>
+  
+  <script>
+
+    
+    $(window).on('load',function(){
+      $('.loader').fadeOut(1000);
+      $('.mes').fadeOut(1000);
+      $('.music-display').fadeIn(1000);
+    });
+    
+    //Fixed Scroll top-con
+    $(window).scroll(function(e){ 
+      var $el = $('.top-con'); 
+      var isPositionFixed = ($el.css('position') == 'fixed');
+      if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+        $el.css({'position': 'fixed', 'top': '0px', 'width': '100%', 'background':'#000000', 'z-index': '100000'});
+      }
+      if ($(this).scrollTop() < 200 && isPositionFixed){
+        $el.css({'position': 'static', 'top': '0px', 'width': '100%', 'background':'rgba(0, 0, 0, 0.44)'}); 
+      } 
+    });
+    
+  </script>
+ </body>
+</html>

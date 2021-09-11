@@ -1,0 +1,120 @@
+.container{
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.47);
+}
+.image-cover{
+  max-width: 100%;
+  height: 340px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.image-cover img{
+  width:100%;
+  height: 300px;
+}
+.songband{
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+  margin:0;
+}
+.details{
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+  padding:0;
+}
+.music-con{
+	margin: 0 10px 0 10px;
+	padding: 0;
+	max-width: 100%;
+	height: 370px;
+	background: rgb(0, 0, 255, 0.27);
+	position: relative;
+}
+.display-sound{
+	width: 98%;
+	height: auto;
+	padding: 5px;
+	margin: 0;
+	color: #fff;
+	font-weight: bold;
+}
+.music-display{
+	width:98%;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin:0;
+	display: none;
+}
+ul{
+	width: auto;
+	height:300px;
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	position: relative;
+}
+ul li{
+	width: 100%;
+	margin: 10px;
+	height: auto;
+	display: flex;
+}
+.play-con{
+	width: 95%;
+	height: 70px;
+}
+#title{
+	color: #fff;
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+audio{
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	margin: 5px 0 10px 0;
+}
+.music-display a{
+  border: none;
+  text-decoration: none;
+  width:100%;
+}
+.music-display a:hover, a:focus, a:active, a:visited{
+  outline: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px){
+	body{
+		overflow-y: hidden;
+	}
+    .container{
+    	height: 70vh;
+    }
+	.alltogether{
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		padding-left: 20px;
+	}
+	.image-cover{
+		width: 40%;
+		float: left;
+		height: 370px;
+	}
+	.music-con{
+		width: 70%;
+		float: left;
+	}
+	.details{
+		float: clear;
+	}
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Jhon Roa  PlayList</title>
+  <link rel="stylesheet" href="playlist.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <div class="top-con">
+    	<h2 class="logo-name"><span style="color:red;">S</span>ound<span style="color:red;">P</span>lay</h2>
+    </div>
+    <div class="container">
+
+     <div class="alltogether">
+
+      <div class="image-cover">
+        <img src="https://dl.dropbox.com/s/tpigh4kfdc3ro5b/16313377282021666159208175310838.jpg?dl=0"/>
+        <div class="songband">Jhon Roa Playlist</div>
+      </div>
+      
+        <div class="music-con">
+        	
+           <div class="display-sound">Music List: <br/><span style="font-size:10px;">It takes awhile to load the music depends on your connection...</span></div>
+             <div class="loader" id="loader"></div>
+           <div class="mes">Loading Data <br/>Please Wait...</div>
+           <div class="music-display">
+           	<ul id="jhonroa"></ul>
+           </div>
+        </div>
+      
+     </div> 
+      <div class="details">
+        <p><span style="color:rgba(0, 255, 0, 1)">Subscribe to The Official Youtube Channel:</span> <a style="text-decoration:none; color:#fff;" href="https://youtube.com/c/ThisBandMusicPH">https://youtube.com/c/JohnRoaTV</a> for more videos.</p>
+      </div>
+      
+    </div>
+    <div class="info">
+        <p>©Copyright</p>
+        <p>®Alright Reserve 2021</p>
+        <p>Publish: </p>
+        <p>Developer: DenZ</p>
+        <p>Follow Official Fb Page:<a href="https://www.facebook.com/DenZMusicBeat/"> https://www.facebook.com/DenZMusicBeat/</a></p>
+        <p>If you have any issue, please kindly <a href="mailto: superdenz2003@gmail.com">email</a> me.</p>
+      </div>
+ 
+    
+  <script>
+  
+    $(window).on('load',function(){
+      $('.loader').fadeOut(1000);
+      $('.mes').fadeOut(1000);
+      $('.music-display').fadeIn(1000);
+    });
+  
+   $(window).scroll(function(e){ 
+      var $el = $('.top-con'); 
+      var isPositionFixed = ($el.css('position') == 'fixed');
+      if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+        $el.css({'position': 'fixed', 'top': '0px', 'width': '95%', 'background':'#000000', 'z-index': '100000'});
+      }
+      if ($(this).scrollTop() < 200 && isPositionFixed){
+        $el.css({'position': 'static', 'top': '0px', 'max-width': '100%', 'background':'rgba(0, 0, 0, 0.44)'}); 
+      } 
+    });
+  
+  
+    var ul = document.getElementById('jhonroa');
+        var music = [
+            {
+               title: "Waiting - John Roa [Official Lyric Video]",
+               audioTruck: "https://docs.google.com/uc?export=download&id=111_eL-GOj3gLQAgums2P3okXfHEZC_8l"
+            },
+            {
+               title: "PAGMAMAHAL - JROA x BOSX1NE",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1EUAgRFaKo7JHzzByDTffmbjrlakqvQ8M"
+            },
+            {
+               title: "Nadarang -Agsunta ft. JRoa (lyrics) _ JRoa and Agsunta Version",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1ImWmcoMyjSALBho-pUSyiqXJSppEl1fD"
+            },
+            {
+               title: "JRoa ft. Bosx1ne - Baliw Sayo",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1OStktGTrsI6K9H5A0KPwsY9Y4AGvL9X0"
+            },
+            {
+               title: "JRoa - Habulan ft. Bryan Chong",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1DncVENVdGkfDIjfaxl0M0bGFVptAAPS8"
+            },
+            {
+               title: "JRoa - Dying Inside To Hold You (Lyrics) (Cover)",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1DNFA4q9OrMHWWQGnT2nBaXFkUl9TyI1h"
+            },
+            {
+               title: "JRoa - Dati ft. Skusta Clee",
+               audioTruck: "https://docs.google.com/uc?export=download&id=10r7rSBCvNAgGbqtWQHzH3tFMCFBjnDLt"
+            },
+            {
+               title: "John Roa - 'Oks Lang' Official Music Video",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1LPKvldf41z5DYCkHo5emvr0p1ivCUln5"
+            },
+
+            {
+               title: "Crush Lyrics   Kent MNL ✘ Jroa (Cover)",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1vcAfjqxT6eXUWy3_btpQe2AeqF2jW-Cx"
+            },
+            {
+               title: "Alam Ko - John Roa (Lyrics)",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1rr7jCKc7BfCAz-j0n48thguLZmI5_YF8"
+            },
+            {
+               title: "JRoa - Larawan ft. Flow G",
+               audioTruck: "https://docs.google.com/uc?export=download&id=1YyvFYKSAJAqYs10qtCng1_YEu6o_rl3z"
+            },
+            {
+              title: "Di ako Fuckboy - JRoa _ Emcee Rhenn ft. Agsunta(MP3_160K)",
+              audioTruck: "https://docs.google.com/uc?export=download&id=1fn2xnmT4QbI6sY1mM6VqwQ0lOcZ8r7EV"
+          }
+        ];
+
+for(var i=0; i<music.length; i++){
+	
+	var li, div, span, audio, source, a;
+	
+	li = document.createElement('li');
+	div = document.createElement('div');
+	a = document.createElement('a');
+	span = document.createElement('span');
+	audio = document.createElement('audio');
+	source = document.createElement('source');
+	
+	div.setAttribute('class','play-con');
+	span.setAttribute('id','title');
+	audio.setAttribute('controls','controls');
+	audio.setAttribute('id','audiotruck');
+	source.setAttribute('src','');
+	a.setAttribute('href','#');
+	
+	span.textContent = music[i].title;
+	source.src = music[i].audioTruck;
+	
+	audio.appendChild(source);
+	div.appendChild(span);
+	div.appendChild(audio);
+	a.appendChild(div);
+	li.appendChild(a);
+	ul.appendChild(li);
+	
+	
+}
+    
+  </script>
+</body>
+</html>

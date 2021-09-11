@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>This Band PlayList</title>
+  <link rel="stylesheet" href="playlist.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <div class="top-con">
+    	<h2 class="logo-name"><span style="color:red;">S</span>ound<span style="color:red;">P</span>lay</h2>
+    </div>
+    <div class="container">
+       
+     <div class="alltogether">
+
+      <div class="image-cover">
+        <img src="https://dl.dropbox.com/s/6r860n4hn6mt81x/16313285685582341589791614542692.jpg?dl=0"/>
+        <div class="songband">This Band Playlist</div>
+      </div>
+        <div class="music-con">
+        	
+           <div class="display-sound">Music List: <br/><span style="font-size:10px;">It takes awhile to load the music depends on your connection...</span></div>
+             <div class="loader" id="loader"></div>
+           <div class="mes">Loading Data <br/>Please Wait...</div>
+           <div class="music-display">
+           	<ul id="thisband"></ul>
+           </div>
+        </div>
+     </div>
+      <div class="details">
+        <p><span style="color:rgba(0, 255, 0, 1)">Members:</span> Andrea Manzano, Euwie Von Loria, Miccael Galvan, John Kenneth Macaranas, Melvin Carson, Reymart Gubat</p>
+        <p><span style="color:rgba(0, 255, 0, 1)">Origin:</span> Las Piñas, Metro Manila, Philippines</p>
+        <p><span style="color:rgba(0, 255, 0, 1)">Genres:</span> Pop rock, Pop punk, Alt rap, Indie rock, Alt rock</p>
+        <p><span style="color:rgba(0, 255, 0, 1)">Subscribe To The Official Youtube Channel:</span>  <a style="text-decoration:none; color:#fff;" href="https://youtube.com/c/ThisBandMusicPH">https://youtube.com/c/ThisBandMusicPH</a> for more videos.</p>
+      </div>
+      
+      
+      
+    </div>
+    <div class="info">
+        <p>©Copyright</p>
+        <p>®Alright Reserve 2021</p>
+        <p>Publish: </p>
+        <p>Developer: DenZ</p>
+        <p>Follow Official Fb Page:<a href="https://www.facebook.com/DenZMusicBeat/"> https://www.facebook.com/DenZMusicBeat/</a></p>
+        <p>If you have any issue, please kindly <a href="mailto: superdenz2003@gmail.com">email</a> me.</p>
+      </div>
+ 
+    
+  <script>
+  $(window).on('load',function(){
+      $('.loader').fadeOut(1000);
+      $('.mes').fadeOut(1000);
+      $('.music-display').fadeIn(1000);
+    });
+    
+   $(window).scroll(function(e){ 
+      var $el = $('.top-con'); 
+      var isPositionFixed = ($el.css('position') == 'fixed');
+      if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+        $el.css({'position': 'fixed', 'top': '0px', 'width': '100%', 'background':'#000000', 'z-index': '100000'});
+      }
+      if ($(this).scrollTop() < 200 && isPositionFixed){
+        $el.css({'position': 'static', 'top': '0px', 'width': '100%', 'background':'rgba(0, 0, 0, 0.44)'}); 
+      } 
+    });
+  
+  
+    var ul = document.getElementById('thisband');
+var music = [
+  {
+  	title: "Hindi Na Nga - This Band",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17_0MKihZx-qF0s3aCdMopQkxZGCpJWz1"
+  },
+  {
+  	title: "This Band - Bakit Ganon (Lyric Video)(MP3_320K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17oenc6RajECRAaIByGehEHIHg6KzqUe5"
+  },
+  {
+  	title: "This Band - Kahit Ayaw Mo Na (Lyrics)(MP3_160K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=105VFw8iDlDpekEcQ-gsUDoK61OG-xTg6"
+  },
+  {
+  	title: "This Band - Nang Iwan (Lyric Video)(MP3_320K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17e8tdihos0nAzMEb9NnSO_zt9xJN0ohI"
+  },
+  {
+  	title: "This Band - _Di Na Babalik (Lyric Video)(MP3_160K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17lSleUa8pMs3nItDGFiMA7AQ9fm1HiCW"
+  },
+  {
+  	title: "This Band _ Bitaw Na (Lyric Video)(MP3_160K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=106xxFsfiJksOwWa6_eVR0xxwZLArfs45"
+  },
+  {
+  	title: "This Band - Sinungaling Ka (Lyric Video)(MP3_320K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17r6QSjpuQ32Ks94DSqJYzzMV83fsJH1i"
+  },
+  {
+  	title: "This Band x Pusakalye _ Wala Na Ang Init (Lyric Video)(MP3_160K)",
+      audioTruck: "https://docs.google.com/uc?export=download&id=1-Voe8OLHcMDrnRBb84aQK1j7YRorYhjk"
+  },
+  {
+  	title:"Ligaya? - This Band",
+      audioTruck: "https://docs.google.com/uc?export=download&id=17rZWuyITkCd1HxpE2hiKRx4HJkszg9re"
+  },
+  {
+  	title: "Sa Nangungulila - Sarah Geronimo & This Band",
+      audioTruck: "https://docs.google.com/uc?export=download&id=104v0VPnhcqR-GZgpM3JmdjJzxUgWl58K"
+  }
+];
+
+for(var i=0; i<music.length; i++){
+	
+	var li, div, span, audio, source, a;
+	
+	li = document.createElement('li');
+	div = document.createElement('div');
+	a = document.createElement('a');
+	span = document.createElement('span');
+	audio = document.createElement('audio');
+	source = document.createElement('source');
+	
+	div.setAttribute('class','play-con');
+	span.setAttribute('id','title');
+	audio.setAttribute('controls','controls');
+	audio.setAttribute('id','audiotruck');
+	source.setAttribute('src','');
+	a.setAttribute('href','#');
+	
+	span.textContent = music[i].title;
+	source.src = music[i].audioTruck;
+	
+	
+	audio.appendChild(source);
+	div.appendChild(span);
+	div.appendChild(audio);
+	a.appendChild(div);
+	li.appendChild(a);
+	ul.appendChild(li);
+	
+	
+}
+    
+  </script>
+</body>
+</html>

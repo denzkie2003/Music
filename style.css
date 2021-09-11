@@ -1,0 +1,267 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	max-height: 800px;
+	background-image: url('https://dl.dropbox.com/s/s04xwhkmppn9qvu/aea3c9a98b41c612b3afed295bc88c7e.jpg?dl=0');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	overflow-x: hidden;
+}
+/*Fixed top container*/
+.top-con{
+	max-width: 100%;
+	margin:0;
+	padding: 10px;
+	height: auto;
+	overflow-x: hidden;
+	text-shadow: 1px 1px #000000;
+	background: rgb(0, 0, 0, 0.44)
+}
+.top-con .logo-name{
+	color: #fff;
+	margin: 0;
+	font-size: 25px;
+}
+/*Main container*/
+.main{
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.intro-message{
+	max-width: 100%;
+	height: auto;
+	margin: 10px;
+	text-align: center;
+	background: rgb(0, 0, 0, 0.16)
+}
+.intro-message span{
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px #000000;
+	letter-spacing: 3;
+	font-family: "Times New Roman", serif;
+}
+input[type=search]{
+	width: 70%;
+	height: 50px;
+	padding: 5px 10px 5px 10px;
+	margin: 0 10px 10px 10px;
+	background-color: rgb(0, 0, 0, 0.44);
+	border: 1px solid #6D6D6D;
+	border-radius: 15px;
+	color: #fff;
+}
+input[type=search]:focus{
+	outline: none;
+	box-shadow: 1px 1px 5px #000000;
+}
+/*Music container*/
+.music-con{
+	margin: 0 10px 0 10px;
+	padding: 0;
+	max-width: 100%;
+	height: 370px;
+	background: rgb(0, 0, 255, 0.27);
+	position: relative;
+}
+.display-sound{
+	width: 98%;
+	height: auto;
+	padding: 5px;
+	margin: 0;
+	color: #fff;
+	font-weight: bold;
+}
+.music-display{
+	width:98%;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin:0;
+	display: none;
+}
+ul{
+	width: auto;
+	height:300px;
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	position: relative;
+}
+ul li{
+	width: 100%;
+	margin: 10px;
+	height: auto;
+	display: flex;
+}
+.play-con{
+	width: 95%;
+	height: 70px;
+}
+#title{
+	color: #fff;
+	width: 50%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+audio{
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	margin: 5px 0 10px 0;
+}
+.music-display a{
+  border: none;
+  text-decoration: none;
+  width:100%;
+}
+.music-display a:hover, a:focus, a:active, a:visited{
+  outline: none;
+  color: inherit;
+}
+.loader{
+  width: 50px;
+  height: 50px;
+  border: 10px solid #000000;
+  border-top-color: #fff;
+  position: absolute;
+  z-index:1000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  top:40%;
+  left:40%;
+  overflow: hidden;
+  animation: spin 1.5s infinite linear;
+}
+.mes{
+  position: absolute;
+  top: 63%;
+  left: 33%;
+  z-index: 1000;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+}
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/*Album*/
+.playlist-con{
+	max-width: 100%;
+	height: auto;
+	margin: 10px;
+	padding:0;
+	background: rgb(26, 26, 94, 0.47);
+}
+.playlist-name{
+	color: #fff;
+	font-size: 17px;
+	width: 90%;
+	padding:10px;
+}
+.playlist{
+    width: 100%;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#playlist{
+	width:95%;
+	height: 350px;
+	list-style-type: none;
+	padding:0;
+}
+#playlist li{
+	width: 100%;
+	margin: 10px 0 10px 5px;
+	height: 70px;
+	border: 1px solid grey;
+}
+#playlist li a{
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+}
+#playlist li a:hover, a:focus, a:visit{
+	outline: none;
+	background-color: none;
+}
+#album-img{
+	width: 70px;
+	height: 70px;
+}
+#album-title{
+	color: #fff;
+	font-size: 20px;
+	padding:10px;
+}
+
+.info{
+  max-width: 100%;
+  text-align: center;
+  background: rgb(0, 79, 255, 0.78);
+  padding: 5px;
+}
+.info p{
+  font-size: 15px;
+  margin: 10px;
+  color: #fff;
+  font-family: serif;
+}
+.info p a{
+  color: #fff;
+}
+/*Responsive*/
+@media screen and (min-width: 768px){
+  .top-con{
+  	width: 100%;
+  }
+  .music-con{
+  	text-align: center;
+  	position: relative;
+      justify-content: center;
+  }
+  .display-sound{
+    width:100%;
+    margin: auto;
+  }
+  .music-display{
+    max-width:100%;
+    position: relative;
+    text-align: center;
+  }
+  ul{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+  }
+  ul li{
+    width: 100%;
+  }
+  .loader{
+     margin-left: 5%;
+  }
+  .mes{
+    margin-left: 10%;
+  }
+  #playlist li{
+	width: 40%;
+	float: left;
+  }
+  #playlist{
+  	padding-left: 150px;
+  }
+
+}
