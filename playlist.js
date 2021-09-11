@@ -28,7 +28,7 @@ var playlist = [
   {
   	title: "Skusta Clee",
       alt: "Skusta Clee",
-      sourceLink: "#",
+      sourceLink: "skustaclee.html",
       imageSrc: "https://drive.google.com/thumbnail?id=10DX7hs61PeCACP2NIhlpK6XF-OKxecJr"
   }
 ];
