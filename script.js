@@ -1,6 +1,14 @@
 var ul = document.getElementById('music-list');
 
 var music = [
+     {
+             title: "Roa - Sunrise 【Official】",
+             audioTruck: "https://docs.google.com/uc?export=download&id=1zrgZKTDBCvN2jRFp2TWVAxdmi00XPaUs"
+          },
+          {
+             title: "Roa - Nightfall 【Official】",
+             audioTruck: "https://docs.google.com/uc?export=download&id=1m3TS7zZSCCY-_yEQL8Os4eulMKZocccB"
+          },
   {
      title: "Roa - Moonlight 【Official】",
      audioTruck: "https://docs.google.com/uc?export=download&id=1IkT0WKkPaHdhR0zmmB03T5EhS1J2ij4Z"
