@@ -46,7 +46,7 @@ var music = [
   },
            {
         	  title: "Owl →「 琥珀 」(MP3_160K)",
-            audioTruck: "Owl →「 琥珀 」(MP3_160K).mp3"
+            audioTruck: "https://docs.google.com/uc?export=download&id=1iHG6ZeFsA44WzuahcU_nH-VveJ0H3yRR"
          },
   {
   	  title: "Yanagi Nagi →[ Toreiru ]",
