@@ -14,6 +14,12 @@ var playlist = [
       imageSrc: "https://drive.google.com/thumbnail?id=10DX7hs61PeCACP2NIhlpK6XF-OKxecJr"
   },
   {
+  	title: "[Anime] Japanese Music Collection",
+      alt: "Anime",
+      sourceLink: "animusic.html",
+      imageSrc: "https://drive.google.com/thumbnail?id=10DX7hs61PeCACP2NIhlpK6XF-OKxecJr"
+  },
+  {
   	title: "Jhon Roa",
       alt: "Jhon Roa",
       sourceLink: "jhonroa.html",
