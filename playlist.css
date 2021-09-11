@@ -20,6 +20,9 @@
   font-size: 30px;
   padding: 5px;
   margin:0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .details{
   color: #fff;
