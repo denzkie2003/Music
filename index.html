@@ -23,7 +23,7 @@
     <div class="main-con">
         <div class="ads">Please help by donating any amount to maintain this site.<br/>Donate via Gcash: #09517382710<br/>Thank you!</div>
     	<div class="intro-message">
-    	   <span>Welcome to <span style="color:red;">S</span>ound<span style="color:red;">P</span>lay. A free webpage to start listening and downloading hundreds of musics for free.</span>
+    	   <span>Welcome to <span style="color:red;">S</span>ound<span style="color:red;">P</span>lay. A free webpage to start listening and downloading music for free.</span>
           <br/><br/>
           <span id="songs" style="padding:0;font-size:10px;margin: 3px; color: #fff"></span><br/>
           <input type="search" name="findmusic" id="findmusic" placeholder="Search Music" onkeyup="searchMusic()"/>
@@ -82,7 +82,7 @@
         $el.css({'position': 'fixed', 'top': '0px', 'width': '100%', 'background':'#000000', 'z-index': '100000'});
       }
       if ($(this).scrollTop() < 200 && isPositionFixed){
-        $el.css({'position': 'static', 'top': '0px', 'width': '100%', 'background':'rgba(0, 0, 0, 0.44)'}); 
+        $el.css({'position': 'static', 'top': '0px', 'max-width': '100%', 'background':'rgba(0, 0, 0, 0.44)'}); 
       } 
     });
     
