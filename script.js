@@ -4,7 +4,7 @@ var music = [
 	
   {
      title: "A Super Nice Japanese Song PromiseYakusoku 約束Lyrics.",
-     audioTruck: "https://www.dropbox.com/thumbnail?id=9berr0ybk728aec/A%20Super%20Nice%20Japanese%20Song%20PromiseYakusoku%20%E7%B4%84%E6%9D%9FLyrics.mp3?dl=0"
+     audioTruck: "https://dl.dropbox.com/thumbnail?id=9berr0ybk728aec/A%20Super%20Nice%20Japanese%20Song%20PromiseYakusoku%20%E7%B4%84%E6%9D%9FLyrics.mp3?dl=0"
   },
 	
 	
