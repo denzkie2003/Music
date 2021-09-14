@@ -20,7 +20,7 @@ var music = [
 {
   title: "ZEBBIANA Lyric Video - Skusta Clee (Prod. by Flip-D)(MP3_160K)",
   audioTruck: "https://docs.google.com/uc?export=download&id=1nIB6Bh07qSlYWVy7oVWAayOPLrQTQvwz"
-),
+},
   {
   title: "Kano →「 Sentimental Love Heart 」(MP3_160K)",
   audioTruck: "https://docs.google.com/uc?export=download&id=1msL5jkvFFXqpQdZyMs5HO8yn3xf878Yn"
