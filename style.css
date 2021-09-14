@@ -19,12 +19,64 @@ body{
 	height: auto;
 	overflow-x: hidden;
 	text-shadow: 1px 1px #000000;
-	background: rgb(0, 0, 0, 0.44)
+	background: rgb(0, 0, 0, 0.44);
+	display: flex;
 }
 .top-con .logo-name{
 	color: #fff;
 	margin: 0;
+	width: 90%;
 	font-size: 25px;
+}
+.notif{
+  font-size: 20pt;
+  width: 13pt;
+  border-radius: 20pt;
+  height: 20pt;
+  margin:0;
+  padding:0;
+  color: #0015FF;
+  position: relative;
+}
+.notif .notif-bar{
+  background-color: #FF0000;
+  width: auto;
+  height:0;
+  padding:2pt;
+  position: absolute;
+  top:0px;
+  right:0px;
+}
+.notif-show{
+  max-width: 95%;
+  max-height: 600px;
+  background: #000000;
+  position: absolute;
+  z-index:100;
+  margin:10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  display:none;
+}
+.close-notif{
+  position: absolute;
+  top: 0;
+  right:5px;
+  color: #fff;
+}
+.notif-show .header{
+  font-size: 30pt;
+  color: #FFB600;
+  margin:0;
+  padding: 5px;
+}
+iframe{
+  width: 100%;
+  height: 540px;
+  background: #fff;
 }
 /*Main container*/
 .main{
