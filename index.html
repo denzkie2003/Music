@@ -19,6 +19,25 @@
  <body>
     <div class="top-con">
     	<h2 class="logo-name"><span style="color:red;">S</span>ound<span style="color:red;">P</span>lay</h2>
+    	<div class="notif" onclick="showNotif()">
+    	  <script type="text/javascript" charset="utf-8">
+    	    function showNotif(){
+    	      $('#notif').fadeIn(1000);
+    	    }
+    	  </script>
+    	  <i class="fas fa-bell"></i>
+    	  <span class="notif-bar"></span>
+    	</div>
+    	<div class="notif-show" id="notif">
+    	  <span class="close-notif" onclick="closeNotif()"><i class="fas fa-times"></i></span>
+    	   <script type="text/javascript" charset="utf-8">
+    	     function closeNotif(){
+    	       $('#notif').fadeOut(1000);
+    	     }
+    	   </script>
+    	  <div class="header"><strong>WEBSITE UPDATE</strong></div>
+    	  <iframe src="notif.html" frameborder="0" width="100" height="100" marginwidth="0" marginheight="0"></iframe>
+    	</div>
     </div>
     
     <div class="main-con">
