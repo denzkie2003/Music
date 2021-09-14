@@ -1,7 +1,38 @@
 var ul = document.getElementById('music-list');
 
 var music = [
-  
+  {
+  title: "Dance With You - Skusta Clee ft. Yuri Dope (Prod. by Flip-D) (Official Music Video)(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1nP18F9ygQwUMyArV7FmRen6uu52OK4RV"
+},
+{
+  title: "Nandito Lang Ako - Skusta Clee_ Jnske_ Leslie_ Honcho_ Bullet D_ Flow G (Prod. by Flip-D)(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1nRbnjYRzxcRI_ztkWT5d26NahQfTtxQO"
+},
+{
+  title: "UMAASA Lyric Video - Skusta Clee (Prod. by  Flip-D)(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1nRz8Uev0KA8vu95Y9f85tjLQg7JO-AYI"
+},
+{
+  title: "Flow G ft. Skusta Clee - Panda (REMIX) OFFICIAL MUSIC VIDEO(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1nTlexseLKwZTO0oP6bzQbstl4sGffUny"
+},
+{
+  title: "ZEBBIANA Lyric Video - Skusta Clee (Prod. by Flip-D)(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1nIB6Bh07qSlYWVy7oVWAayOPLrQTQvwz"
+),
+  {
+  title: "Kano →「 Sentimental Love Heart 」(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1msL5jkvFFXqpQdZyMs5HO8yn3xf878Yn"
+  },
+{
+  title: "Kokia →「 Hontou no oto 」(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1msYTYXAMXYEo-OMLQARKWOo1dWa0b9um"
+},
+{
+  title: "Nagi feat. Nayuta →「 Yamanai Ame ni Hanataba wo 」(MP3_160K)",
+  audioTruck: "https://docs.google.com/uc?export=download&id=1mww6jqbjXmUdODzE1EL7bZsds6IlVAyX"
+},
   {
      title: "A Super Nice Japanese Song PromiseYakusoku 約束Lyrics",
      audioTruck: "https://dl.dropboxusercontent.com/s/9berr0ybk728aec/A%20Super%20Nice%20Japanese%20Song%20PromiseYakusoku%20%E7%B4%84%E6%9D%9FLyrics.mp3?dl=0"
